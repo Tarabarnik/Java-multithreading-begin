@@ -16,7 +16,8 @@ public class ThreadR implements Runnable {
         while (counter.getCount() < Counter.getThreshold()) {
             counter.count();
             score++;
-            System.out.println("ThreadR " + Thread.currentThread().getName() + " " + counter.getCount());
+            System.out.println("ThreadR " + Thread.currentThread().getName() + " "
+                    + counter.getCount());
         }
         System.out.println("ThreadR score is " + score);
     }

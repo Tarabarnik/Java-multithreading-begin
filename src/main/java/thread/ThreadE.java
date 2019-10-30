@@ -16,7 +16,8 @@ public class ThreadE extends Thread {
         while (counter.getCount() < Counter.getThreshold()) {
             counter.count();
             score++;
-            System.out.println("ThreadE " + ThreadE.currentThread().getName() + " " + counter.getCount());
+            System.out.println("ThreadE " + ThreadE.currentThread().getName() + " "
+                    + counter.getCount());
         }
         System.out.println("ThreadE score is " + score);
     }

@@ -4,6 +4,7 @@ import thread.ThreadR;
 
 public class ThreadMain {
     private static Counter counter = new Counter();
+
     public static void main(String[] args) {
 
         Thread threadR = new Thread(new ThreadR(counter));
